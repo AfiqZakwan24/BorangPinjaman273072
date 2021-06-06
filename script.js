@@ -101,7 +101,7 @@ function confirmClick(event){
         sessionStorage.setItem("TArray", JSON.stringify(titleArray));
         sessionStorage.setItem("IArray", JSON.stringify(imgArray));
         sessionStorage.setItem("QArray", JSON.stringify(quantArray));
-        FormHtml = window.location.assign("https://borangpinjaman273072.000webhostapp.com/");
+        FormHtml = window.location.assign("https://www.youtube.com/");
     }
     else{
         return;
