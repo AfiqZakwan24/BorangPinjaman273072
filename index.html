@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Borrowing Form</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js">async</script>
+	<body> 
+    <form id="regForm" action="/action_page.php">
+        <img class="logo" src="Images/LOGOUUM.png" alt="LOGOUUM">
+        <h2>BORANG PINJAMAN <BR /> STUDIO VO DAN STUDIO GAMBAR <BR /> PUSAT PENGAJIAN TEKNOLOGI MULTIMEDIA DAN KOMUNIKASI</h2>
+        <hr>
+        <!-- One "tab" for each step in the form: -->
+        <section >
+            <h1>ASSET</h1>
+            <div class="item">
+                <span class="ProductName">VIDEO CAMERA</span>
+                <div class=Product>
+                    <img class= "productImage" src="Images\VideoCamera.jpg" alt="video camera">   
+                    <div class="description">
+                        <ul>
+                            <li>Model: Panasonic AG-HPX250EN Camera 1/3-inch 3MOS Full HD P2HD Camcoder c/w 5 years extended warranty repairs after registeration</li>
+                            <p>Quantity: <span class="quant">1 Unit</span></p>
+                        </ul>
+                        <button type="button" class="AddAsset">ADD TO CART</button>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="item">
+                <span class="ProductName">BATTERY</span>
+                <div class=Product>
+                    <img class= "productImage" src="Images/Battery.png" alt="Battery">   
+                    <div class="description">
+                        <ul>
+                            <li>Model: CGA-D54 - Battery Pack (5400mAh)</li>
+                            <p>Quantity: <span class="quant">1 Unit</span></p>
+                        </ul>
+                        <button type="button" class="AddAsset">ADD TO CART</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="item">
+                <span class="ProductName">MEMORY CARD</span>
+                <div class=Product>
+                    <img class= "productImage" src="Images/MemoryCard.png" alt="Memory Card">   
+                    <div class="description">
+                        <ul>
+                            <li>Model: AJ-P2E064XG-P2 Card E Series Memory Card</li>
+                            <p>Quantity: <span class="quant">1 Unit</span></p>
+                        </ul>
+                        <button type="button" class="AddAsset">ADD TO CART</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="item">
+                <span class="ProductName">MEMORY DRIVE</span>
+                <div class=Product>
+                    <img class= "productImage" src="Images/MemorySlot.png" alt="Memory Drive">   
+                    <div class="description">
+                        <ul>
+                            <li>Model: AJ-PCD2GP2 - Single Slor Memory Drive</li>
+                            <p>Quantity: <span class="quant">1 Unit</span></p>
+                        </ul>
+                        <button type="button" class="AddAsset">ADD TO CART</button>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="item">
+                <span class="ProductName">CAMERA TRIPOD</span>
+                <div class=Product>
+                    <img class= "productImage" src="Images\Tripod.jpeg" alt="video camera Tripod">   
+                    <div class="description">
+                        <ul>
+                            <li>Carbon Tripod Kits (Payload Max 12kg) Model: EI-7085-C2</li>
+                            <p>Quantity: <span class="quant">1 Unit</span></p>
+                        </ul>
+                        <button type="button" class="AddAsset">ADD TO CART</button>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="item">
+                <span class="ProductName">Monitor</span>
+                <div class=Product>
+                    <img class= "productImage" src="Images\Monitor.jpg" alt="Monitor">
+                    <div class="description">
+                        <ul>
+                            <li>Model: Ilogos 5" monitor c/w HDMI Cable </li>
+                            <p>Quantity: <span class="quant">1 Unit</span></p>
+                        </ul>
+                        <button type="button" class="AddAsset">ADD TO CART</button>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="item">
+                <span class="ProductName">MICROPHONE</span>
+                <div class=Product>
+                    <img class= "productImage" src="Images\Microphone.jpg" alt="Monitor">
+                    <div class="description">
+                        <p>Clip On Microphone Sennheiser Model: EW122-PG3<br>UHF Wireless Camera Set c/w: </p>
+                        <ul>
+                            <li>1 X EK100 G3 Diversity Receiver</li>
+                            <li>1 X SK100 G3 Bodypack Transmitter </li>
+                            <li>1 X ME2 Clip on Microphone (Omni-Directional)</li>
+                            <li>1 X CL1 Jack Cable</li>
+                            <li>1 X CA2 Camera Adaptor</li>
+                            <li>4 X AA Batteries</li>
+                            <p>Quantity: <span class="quant">1 Set</span></p>
+                        </ul>
+                        <button type="button" class="AddAsset">ADD TO CART</button>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="cartTab">
+            <h1>CART</h1>
+            <div class="row">
+                <span class="cartItem cartHeader column">ITEM</span>
+                <span class="cartQuantity cartHeader column">QUANTITY</span>
+                <span class="cartEdit cartHeader column">EDIT</span>
+            </div>
+            <div class="cartItems">
+            </div>
+            <div class="instruction">
+                <button type="button" class="Clear">RESET</button>
+                <button type="button" class="Confirm">CONFIRM</button>
+            </div>
+        </section>
+    </form>
+	</body>
+</html>

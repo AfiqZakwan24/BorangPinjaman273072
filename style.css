@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCGPrcVIT9d0c-dYA.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+#regForm {
+    background-color: #a35ead;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 20px;
+    width: 80%;
+    min-width: 300px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center; 
+    color: #4a1552;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+}
+  
+::placeholder {
+    color: #D8BFD8;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #d96887;
+}
+
+.AssetName{
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Quantity{
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartList{
+    display: flex;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+label{
+    font-weight: bold;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #401047;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #401047;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #401047;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.2;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #401047;
+}
+
+.ProductName{
+    display: block;
+    width:100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #2f0d35;
+}
+
+.productImage {
+    align-content: center;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.logo{
+    width:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #401047;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.Product{
+    display: flex;
+}
+
+.ProductName{
+    text-align: center;
+}
+
+.description{
+    margin-right: 10px;
+    width: 75%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.item{
+    margin-top: 20px;
+    background-color: #F2C4EB;
+}
+
+.cartHeader{
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.cartItem{
+    width:60%;
+}
+
+.cartQuantity{
+    width: 20%;
+}
+
+.cartEdit{
+    width: 20%
+}
+
+.cartTitle{
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.Remove {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    display: block;
+    float: right;
+}
+
+.Remove:hover{
+    background-color: #CC4C4C;
+}
+
+.row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.Confirm{
+    display: block;
+    margin: 10px auto 50px auto;
+    font-size: 1.25em;
+}
+.Clear{
+    display: block;
+    margin: 40px auto 10px auto;
+    font-size: 1.25em;
+}
+
+.cartNumber{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.cartTab{
+    margin-top:20px;
+    border: 1px solid black;
+    background-color: #F2C4EB;
+}
+
+.cartImage{
+    margin-left: 10px;
+    width: 500px;
+}
